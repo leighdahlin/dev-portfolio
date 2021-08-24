@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dev-portfolio/static/css/main.909eebd2.chunk.css",
+    "main.css": "/dev-portfolio/static/css/main.57dcc607.chunk.css",
     "main.js": "/dev-portfolio/static/js/main.43c23c88.chunk.js",
     "main.js.map": "/dev-portfolio/static/js/main.43c23c88.chunk.js.map",
     "runtime-main.js": "/dev-portfolio/static/js/runtime-main.d06ade94.js",
@@ -12,7 +12,7 @@
     "static/js/3.a13ab0cc.chunk.js.map": "/dev-portfolio/static/js/3.a13ab0cc.chunk.js.map",
     "index.html": "/dev-portfolio/index.html",
     "static/css/2.818011ed.chunk.css.map": "/dev-portfolio/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.909eebd2.chunk.css.map": "/dev-portfolio/static/css/main.909eebd2.chunk.css.map",
+    "static/css/main.57dcc607.chunk.css.map": "/dev-portfolio/static/css/main.57dcc607.chunk.css.map",
     "static/js/2.b556da10.chunk.js.LICENSE.txt": "/dev-portfolio/static/js/2.b556da10.chunk.js.LICENSE.txt",
     "static/media/Leigh Dahlin Resume 08232021.df60f8a6.pdf": "/dev-portfolio/static/media/Leigh Dahlin Resume 08232021.df60f8a6.pdf",
     "static/media/badge-bulma.b29109e2.png": "/dev-portfolio/static/media/badge-bulma.b29109e2.png",
@@ -44,7 +44,7 @@
     "static/js/runtime-main.d06ade94.js",
     "static/css/2.818011ed.chunk.css",
     "static/js/2.b556da10.chunk.js",
-    "static/css/main.909eebd2.chunk.css",
+    "static/css/main.57dcc607.chunk.css",
     "static/js/main.43c23c88.chunk.js"
   ]
 }
