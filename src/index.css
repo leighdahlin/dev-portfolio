@@ -1,0 +1,644 @@
+/*
+ * Globals
+ */
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+ html, body, #root, .App {
+  height: 100%;
+}
+
+html, body, #root, .App {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 48rem;
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+/*
+ * Header
+ */
+
+ .nav-masthead .nav-link {
+  /* padding: .25rem 0; */
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--off-white);
+  background-color: transparent;
+  border-bottom: .22rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  color: #fff;
+  border-bottom-color: var(--teal);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: .25rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* Background images obtained from: www.pexels.com/ */
+/* Color palette generated from https://colorhunt.co/ */
+
+/* variables created for color scheme */
+:root {
+  --off-white: #e7e7de;
+  --teal: #62959c;
+  --dark-blue: #00587a;
+  --midnight-blue: #0f3057;
+}
+
+#root {
+  background-image: url(./assets/images/wood-grain.jpg);
+  background-size: cover; /* this makes the background image stretch to fit the entire space, or else it would repeat itself */
+  display: flex;
+  background-repeat: repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio:hover {
+cursor:pointer;
+}
+
+#nav {
+  width: 100%;
+}
+
+#header-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#intro {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#intro-card {
+  height: inherit;
+}
+
+#intro h1 {
+  font-size: 4.5rem;
+  color: var(--off-white);
+}
+
+#header-div h3 {
+  color: var(--off-white);
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+#header-div a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0.25rem;
+}
+
+#intro .lead {
+  font-size: 3.5rem;
+  color: var(--off-white);
+  font-weight: 400;
+}
+
+#intro .btn-intro {
+  background-color: var(--off-white);
+  color: var(--dark-blue);
+}
+
+#intro .btn-intro:hover, #intro .btn-intro:focus {
+  background-color: var(--teal);
+  color: var(--off-white);
+}
+
+#intro-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me-pic {
+  width: 30%;
+  border: none;
+  border-radius: 50%;
+  padding-bottom: 1rem;;
+}
+
+#intro-card .card {
+  /* background-color: var(--off-white); */
+  /* border: 8px solid var(--teal); */
+  background-color: var(--dark-blue);
+  color:var(--off-white) ;
+  text-shadow: none;
+  padding: 1.5rem;
+  margin: 3rem;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.content-card {
+  text-align: justify;
+}
+
+.card a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+
+#card3 {
+  background-color: var(--off-white);
+}
+
+#skills-contaier{
+  margin: 3%;
+  margin-top: 6%;
+}
+
+#skills-title {
+  color: var(--dark-blue);
+  border-bottom: 5px solid var(--dark-blue);
+  margin-bottom: 5%;
+}
+
+.skills-info {
+  /* height: 25rem; */
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.row-1 {
+  width: 50%;
+  height: 60%;
+}
+
+.row-2 {
+  width: 80%;
+  height: 50%;
+}
+
+.row-3 {
+  width: 60%;
+  height: 60%;
+  /* margin-top: 2%; */
+}
+
+.row-4 {
+  width: 90%;
+  height: 70%;
+  margin-top: 2%;
+}
+
+.row-5 {
+  width: 70%;
+  height: 50%;
+  margin-top: 2%;
+}
+
+#express {
+  width: 80%;
+  height: 40%;
+}
+
+#seq {
+  height: 100%;
+  width: 70%;
+}
+
+#mongo {
+  height: 100%;
+  width: 100%;
+}
+
+#heroku {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* .card a:hover {
+  color: teal;
+} */
+
+/* Styling from old portfolio file */
+/* the about me paragraph and images next to work are both wrapped in div with display set to flex */
+
+/* .sub-header {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--dark-blue);
+  padding: 3%;
+  border-right: 5px solid var(--dark-blue);
+  text-align: right;
+} */
+
+#work-section {
+  height: inherit;
+}
+
+.project-pictures{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+
+/* this makes the work section a flex box */
+.work {
+  display: inline-flex;
+  justify-content: space-between;
+  
+}
+
+.project-pictures img {
+  border: solid 10px var(--teal);
+}
+
+/* this sets the properties for the pictures in the work section when hovered over */
+.project-pictures img:hover {
+  box-shadow: 0px 0px 50px 0px var(--midnight-blue);
+  transform: scale(1.01);
+  opacity: 3;
+  cursor: pointer;
+}
+
+.text-container1:hover, .text-container2:hover, .text-container3:hover, .text-container4:hover, .text-container5:hover {
+  cursor: pointer;
+}
+
+/* set to relative so that the text containers can be moved around on the pictures */
+#big-picture-container {
+  position: relative;
+  width: 100%;
+}
+
+/* sets the properties for the big picture */
+#big-picture {
+  margin: 1%;
+  margin-top: 4%;
+  height: 85%;
+  width: 100%;
+}
+
+#work-section h3 {
+  font-size: 1.25rem;
+}
+
+/*properties for the project details text*/
+.text-container1 p{
+  color: var(--off-white);
+  font-size: 1rem;
+}
+
+.text-container2 p, .text-container3 p, .text-container4 p, .text-container5 p {
+  color: var(--off-white);
+  font-size: .85rem;
+}
+
+/* sets the properties for the big picture's text box */
+.text-container1 {
+  position: absolute;
+  top: 20%;
+  left: 2.4%; 
+  background: var(--dark-blue);
+  padding-left: 4%;
+  padding-right: 2%;
+  text-align: right;
+}
+
+/* the four pictures below the big picture are in a flex box */
+.other-pictures-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+/* this sets the properties for the pictures below the big picture */
+.other-pictures {
+  width: 49%;
+  margin-bottom: .25rem;
+  margin-left:  1.25%;
+}
+
+
+/* by making the position of the pictures relative and the text box absolute, I can put the text where I want it on the picture */
+.other-pictures-text-container{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 45%;
+}
+
+/*text box for project pictures on the right*/
+.text-container2 {
+  position: absolute; 
+  top: 11%;
+  left: 2.5%;
+  background: var(--dark-blue);
+  padding: 8px;
+  padding-left: 15px;
+  padding-bottom: 0px;
+  text-align: right;
+}
+
+/*text box for project pictures on the left*/
+.text-container3 {
+  position: absolute;
+  top: 55%;
+  right: 1%;
+  background: var(--dark-blue);
+  padding: 8px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  text-align: left;
+}
+
+.text-container4 {
+  position: absolute;
+  top: 11%;
+  right: 1%;
+  background: var(--dark-blue);
+  padding: 8px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  text-align: left;
+}
+
+.text-container5 {
+  position: absolute; 
+  top: 45%;
+  left: 2.5%;
+  background: var(--dark-blue);
+  padding: 8px;
+  padding-left: 15px;
+  padding-bottom: 0px;
+  text-align: right;
+}
+
+.contact-container {
+  margin: 3%;
+}
+
+#contact-info-card, #contact-info-form {
+  padding: 4%;
+  margin-bottom: 5%;
+  background: var(--teal);
+}
+
+/* the contact info next to the header is also in a flex box */
+.contact-info {
+  display: inline-flex;
+  justify-content: space-evenly; /*evenly spaces out the phone number and links to Github and LinkedIn*/
+  align-items: center;
+  width: 100%;
+}
+
+.contact-title {
+  color: var(--midnight-blue);
+
+}
+
+/* this sets the properties for the anchor elements in the contact section */
+.contact {
+  /* border-bottom: 4px solid var(--dark-blue); */
+  padding: 10px;
+}
+
+.contact-info a {
+  text-decoration: none; /*remvoes bullets*/
+  font-size: 1.1rem;
+  padding: 20px;
+  color: var(--off-white);
+  font-weight: 750; /*boldens the text*/
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modal styles */
+
+.modal-content {
+  background-color: var(--off-white);
+}
+
+.modal-title {
+  color: var(--dark-blue);
+  font-size: 2rem;
+}
+
+.project-info {
+  height: 20%;
+  padding: 3%;
+  margin-top: 3%;
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+.links a{
+  background-color: var(--teal);
+  color: var(--off-white);
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 3%;
+  margin: 2%;
+  cursor: pointer;
+  font-size: 1.15rem;
+}
+
+
+.screenshot-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.screenshot {
+  display: block;
+  width: 90%;
+  margin-top: 2%;
+}
+
+
+
+/* Media queries */
+@media screen and (min-width: 992px) {
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+
+  /* h3 {
+      width: 120px;
+      font-size: 1.5rem;
+  } */
+
+  .paragraph p, .text-container1 p, .text-container2 p, .text-container3 p, p {
+      font-size: 1rem;
+  }
+
+  .other-pictures-text-container h3 {
+      font-size: 1.25rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+  /* h3 {
+      width: 95px;
+      font-size: 1.3rem;
+  } */
+
+  .nav {
+    flex-direction: column;
+    text-align: right;
+  }
+
+  .paragraph p, .text-container1 p, .text-container2 p, .text-container3 p {
+      font-size: .75rem;
+  }
+
+  .other-pictures-text-container h3 {
+      font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  #intro h1 {
+    font-size: 3rem;
+  }
+
+  #intro .lead {
+    font-size: 1.65rem;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    margin: 3%;
+  }
+
+  .card-body {
+    padding: .25rem;
+  }
+
+  #about-me-pic {
+    width: 50%;
+  }
+
+  h3 {
+      width: 75px;
+      font-size: 1.25rem;
+  }
+
+  img {
+      border: solid 5px #008891;
+  }
+
+  .other-pictures-container, .other-pictures-text-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .other-pictures-text-container {
+    height: initial;
+  }
+
+  .other-pictures {
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+    height: 9rem;
+    width: 15rem;
+  }
+
+  .text-container1 {
+      top: 20%;
+      left: 4%;
+  }
+
+  .text-container2, .text-container5 {
+      top: 10%;
+      left: 4%;
+  }
+
+  .text-container3, .text-container4 {
+    top: 72%;
+    right: 4%;
+  }
+
+  .paragraph p, .text-container1 p, .text-container2 p, .text-container3 p, .text-container4 p, .text-container5 p, .contact-info a {
+      font-size: 0.7rem;
+  }
+
+  #work-section h3{
+      font-size: 0.8rem;
+      margin-bottom: 0.2rem;
+  }
+
+  .links a{
+    padding: 2%;
+    margin: 1%;
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-title {
+    border-bottom: 5px solid var(--midnight-blue);
+  }
+
+  .contact {
+      border-bottom: none;
+  }
+
+}
