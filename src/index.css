@@ -14,24 +14,21 @@
 /*
  * Base structure
  */
- html, body, #root, .App {
+ html, body, #root, .App, .cover-container {
   height: 100%;
 }
 
-html, body, #root, .App {
+html, body, #root, .App, .cover-container {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
-.cover-container {
+/* .cover-container {
   max-width: 48rem;
   display: flex;
   flex-direction: column;
   height: inherit;
-  justify-content: center;
-  align-items: center;
-  /* justify-content: center; */
-}
+} */
 
 /*
  * Header
@@ -73,13 +70,13 @@ html, body, #root, .App {
   --midnight-blue: #0f3057;
 }
 
-#root {
+.cover-container {
   background-image: url(./assets/images/wood-grain.jpg);
-  background-size: cover; /* this makes the background image stretch to fit the entire space, or else it would repeat itself */
-  display: flex;
-  background-repeat: repeat;
-  justify-content: center;
-  align-items: center;
+  background-size: cover; 
+  /* display: flex; */
+  /* background-repeat: space repeat; */
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .portfolio:hover {
@@ -96,12 +93,10 @@ cursor:pointer;
 }
 
 #intro {
-  height: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 #intro-card {
@@ -271,6 +266,7 @@ p {
 #work-section {
   height: inherit;
 }
+
 
 .project-pictures{
   display: flex;
