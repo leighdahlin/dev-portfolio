@@ -7,7 +7,7 @@ export default function Intro() {
         <h1>Leigh Dahlin</h1>
         <p className="lead">Full-Stack Web Developer</p>
         <p className="lead">
-          <Link to="/dev-portfolio/about-me">
+          <Link to="/about-me">
             <button id="view" className="btn btn-lg btn-intro fw-bold">View Portfolio</button>
           </Link>
         </p>
